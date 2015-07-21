@@ -9,7 +9,7 @@ import math
 ## Initialization Variables
 
 numbertotryto = 10000000000000
-
+startRange = 1
 ## Functions
 
 
@@ -21,11 +21,11 @@ numbertotryto = 10000000000000
 def runprogram():
 	print("Running\n")
 
-	# validate numbertotryto is greater than 0
-	if numbertotryto > 0:
+	# validate numbertotryto is greater than start Range
+	if numbertotryto > startRange:
 
 		#start loop
-		for i in range(1, numbertotryto):
+		for i in range(startRange, numbertotryto):
 			hypotenuse = math.sqrt(i**2 + i**2)
 
 			print("sides are {} hypotenuse is {}".format(i, hypotenuse))
